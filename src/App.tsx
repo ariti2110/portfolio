@@ -7,10 +7,7 @@ import About from './components/About';
 import Work from './components/Work';
 import Career from './components/Career';
 import TechStack from './components/TechStack';
-<<<<<<< HEAD
-=======
 import './styles/ATS-Friendly.css';
->>>>>>> a8b2afd3f5179f875f93e3bdcb5f1f79b2198466
 import './App.css';
 
 function App() {

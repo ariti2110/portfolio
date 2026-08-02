@@ -1,58 +1,44 @@
-import { MdArrowOutward, MdCopyright } from "react-icons/md";
-import "./styles/Contact.css";
 
-const Contact = () => {
+
+export const Contact = () => {
   return (
-    <div className="contact-section section-container" id="contact">
+    <section className="contact-section">
       <div className="contact-container">
-        <h3>Contact</h3>
-        <div className="contact-flex">
+        <div className="contact-header">
+          <h1>Ariti Chawla</h1>
+          <p className="tagline">AI/ML Engineer | Full-Stack Developer | Data-Driven Problem Solver</p>
+        </div>
 
-          <div className="contact-box">
-            <h4>Connect</h4>
-            <p>
-              <a href="https://www.linkedin.com/in/ariti-chawla/" target="_blank" rel="noreferrer" data-cursor="disable">
-                LinkedIn — ariti-chawla
-              </a>
-            </p>
-            <h4>Education</h4>
-            <p>B.Tech Computer Science Engineering, SGT University, Gurugram — 2022–2026</p>
-            <h4>Email</h4>
-            <p>
-              <a href="mailto:aritichawla2110@gmail.com" data-cursor="disable">
-                aritichawla2110@gmail.com
-              </a>
-            </p>
+        <div className="contact-info">
+          <div className="contact-item">
+            <span className="label">Email:</span>
+            <a href="mailto:aritichawla2110@gmail.com">aritichawla2110@gmail.com</a>
           </div>
-
-          <div className="contact-box">
-            <h4>Social</h4>
-            <a href="https://github.com/ariti2110" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
-              GitHub <MdArrowOutward />
-            </a>
-            <a href="https://www.linkedin.com/in/ariti-chawla/" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
-              LinkedIn <MdArrowOutward />
-            </a>
-            <a href="https://leetcode.com/u/aritichawla2110/" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
-              LeetCode <MdArrowOutward />
-            </a>
-            <a href="https://www.hackerrank.com/profile/aritichawla2110" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
-              HackerRank <MdArrowOutward />
-            </a>
+          <div className="contact-item">
+            <span className="label">Phone:</span>
+            <a href="tel:+919773804367">+91 9773804367</a>
           </div>
-
-          <div className="contact-box">
-            <h2>
-              Designed and Developed <br /> by <span>Ariti Chawla</span>
-            </h2>
-            <h5>
-              <MdCopyright /> 2026
-            </h5>
+          <div className="contact-item">
+            <span className="label">LinkedIn:</span>
+            <a href="https://linkedin.com/in/ariti-chawla" target="_blank" rel="noopener noreferrer">linkedin.com/in/ariti-chawla</a>
           </div>
+          <div className="contact-item">
+            <span className="label">GitHub:</span>
+            <a href="https://github.com/ariti2110" target="_blank" rel="noopener noreferrer">github.com/ariti2110</a>
+          </div>
+          <div className="contact-item">
+            <span className="label">Portfolio:</span>
+            <a href="https://portfolio-theta-beryl-86.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio-theta-beryl-86.vercel.app</a>
+          </div>
+        </div>
 
+        <div className="resume-download">
+          <a href="/resume/Ariti_Chawla_Resume_ATS.pdf" download className="download-btn">
+            📥 Download Resume (PDF)
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
